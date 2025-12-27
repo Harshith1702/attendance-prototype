@@ -1,75 +1,68 @@
-Attendance Prototype
+## Attendance Prototype
 
-This repository contains a simple front-end attendance prototype built using HTML and JavaScript.
-The purpose of this project is to demonstrate conditional attendance marking logic based on multiple verification checks.
+## Overview
+This repository contains a simple front-end attendance prototype developed using HTML and JavaScript.  
+The project demonstrates how attendance can be marked only after certain validation conditions are met.
 
-Project Description
+## Project Description
+The application provides a basic interface where a user can enter a Student ID and simulate verification steps using checkboxes.  
+Attendance is marked only when all required checks are completed successfully.
 
-The application allows a user to enter a Student ID and simulate verification steps using checkboxes.
-Attendance is marked only when all required conditions are satisfied.
+All logic is implemented directly inside a single HTML file without using any backend services.
 
-All logic is implemented directly inside index.html using basic JavaScript.
+## Objective
+The objective of this project is to understand and demonstrate basic conditional logic in a web-based attendance system.
 
-Features Implemented
+## Features
+Student ID input field  
+Device verification simulation using a checkbox  
+GPS / Wi-Fi verification simulation using a checkbox  
+Attendance validation using JavaScript  
+Result message displayed based on validation outcome  
 
-Text input for Student ID
+## Working Logic
+The attendance marking process follows these rules:  
+Student ID must be entered  
+Device verification must be checked  
+GPS / Wi-Fi verification must be checked  
 
-Device verification simulation using a checkbox
+If all the above conditions are satisfied, attendance is marked successfully.  
+If any condition is missing, attendance is not marked.
 
-GPS / Wi-Fi verification simulation using a checkbox
+## Technologies Used
+HTML for structure  
+JavaScript for logic and validation  
 
-Button to mark attendance
+No external libraries, frameworks, or APIs are used.
 
-Result message displayed based on validation outcome
+## How to Run
+Download or clone the repository.  
+Open the index.html file in any modern web browser.  
+Enter a valid Student ID.  
+Select both verification checkboxes.  
+Click the Mark Attendance button to view the result.
 
-Working Logic
+## File Structure
+attendance-prototype/  
+index.html  
 
-Attendance is marked only if:
+## Limitations
+This project does not include real QR code scanning.  
+GPS and Wi-Fi verification are simulated using checkboxes.  
+There is no backend or database integration.  
+Attendance data is not stored permanently.
 
-Student ID is entered
+## Use Case
+This prototype can be used as a learning example for beginners to understand how multiple conditions can be validated before performing an action in a web application.
 
-Device verification is checked
+## Future Scope
+Integration of real QR code scanning.  
+Actual GPS or network-based verification.  
+Backend support for storing attendance records.  
+User authentication and role-based access.
 
-GPS/Wi-Fi verification is checked
+## Status
+Completed – Prototype version.
 
-If any condition is missing, attendance is not marked and an error message is shown.
-
-Technologies Used
-
-HTML
-
-JavaScript
-
-No external libraries or frameworks are used.
-
-How to Run
-
-Clone or download the repository
-
-Open index.html in any modern web browser
-
-Enter a Student ID
-
-Select the verification checkboxes
-
-Click Mark Attendance to see the result
-
-Limitations
-
-No real QR code scanning
-
-No actual GPS or Wi-Fi validation
-
-No backend or database
-
-Data is not stored permanently
-
-This project is intended only as a prototype/demo.
-
-File Structure
-attendance-prototype/
-└── index.html
-
-Purpose
-
-This project serves as a basic prototype for understanding how multiple conditions can be checked before allowing attendance to be marked in a web-based system.
+## Note
+This project is intended for learning and demonstration purposes only.
