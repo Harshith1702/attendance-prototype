@@ -1,68 +1,105 @@
-## Attendance Prototype
+# 🌘 Eclipse Attendance App
 
-## Overview
-This repository contains a simple front-end attendance prototype developed using HTML and JavaScript.  
-The project demonstrates how attendance can be marked only after certain validation conditions are met.
+A web-based QR code attendance management system designed for classrooms and labs.  
+The application provides separate teacher and student dashboards, enabling quick attendance marking using QR codes with a clean, modern UI.
 
-## Project Description
-The application provides a basic interface where a user can enter a Student ID and simulate verification steps using checkboxes.  
-Attendance is marked only when all required checks are completed successfully.
+This project demonstrates frontend logic, DOM manipulation, state handling, and data export using only HTML, CSS, and JavaScript.
 
-All logic is implemented directly inside a single HTML file without using any backend services.
+---
 
-## Objective
-The objective of this project is to understand and demonstrate basic conditional logic in a web-based attendance system.
+## 🚀 Features
 
-## Features
-Student ID input field  
-Device verification simulation using a checkbox  
-GPS / Wi-Fi verification simulation using a checkbox  
-Attendance validation using JavaScript  
-Result message displayed based on validation outcome  
+### 👩‍🏫 Teacher Dashboard
+- Create attendance sessions (subject, section, date)
+- Generate QR code for the active session
+- View complete attendance table
+- Search students by name
+- Filter by present / absent status
+- Manually mark attendance
+- Export attendance data as CSV
 
-## Working Logic
-The attendance marking process follows these rules:  
-Student ID must be entered  
-Device verification must be checked  
-GPS / Wi-Fi verification must be checked  
+### 👨‍🎓 Student Dashboard
+- Select student name
+- Scan QR (simulated) to mark attendance
+- View personal attendance history per session
 
-If all the above conditions are satisfied, attendance is marked successfully.  
-If any condition is missing, attendance is not marked.
+---
 
-## Technologies Used
-HTML for structure  
-JavaScript for logic and validation  
+## 🧠 How It Works
 
-No external libraries, frameworks, or APIs are used.
+1. Teacher creates a session  
+2. QR code is generated for that session  
+3. Student selects their name and scans QR  
+4. Attendance is marked as Present  
+5. Teacher reviews and exports records  
 
-## How to Run
-Download or clone the repository.  
-Open the index.html file in any modern web browser.  
-Enter a valid Student ID.  
-Select both verification checkboxes.  
-Click the Mark Attendance button to view the result.
+⚠️ QR scanning is simulated (no camera access) for simplicity and academic demonstration.
 
-## File Structure
-attendance-prototype/  
-index.html  
+---
 
-## Limitations
-This project does not include real QR code scanning.  
-GPS and Wi-Fi verification are simulated using checkboxes.  
-There is no backend or database integration.  
-Attendance data is not stored permanently.
+## 🛠️ Tech Stack
 
-## Use Case
-This prototype can be used as a learning example for beginners to understand how multiple conditions can be validated before performing an action in a web application.
+- HTML5 – Structure  
+- CSS3 – Styling & responsive layout  
+- JavaScript (Vanilla) – Logic & state management  
+- QRCode.js – QR code generation  
+- CSV Export (Blob API) – Data download  
 
-## Future Scope
-Integration of real QR code scanning.  
-Actual GPS or network-based verification.  
-Backend support for storing attendance records.  
-User authentication and role-based access.
+No backend. No frameworks. Runs fully in the browser.
 
-## Status
-Completed – Prototype version.
+---
 
-## Note
-This project is intended for learning and demonstration purposes only.
+## 📁 Project Structure
+```
+Eclipse-Attendance-App/
+│
+├── index.html # Complete application (HTML, CSS, JS)
+└── README.md # Project documentation
+```
+
+---
+
+## 📊 Data Handling
+
+- Student list is preloaded
+- Attendance stored in JavaScript objects
+- Session-based history maintained per student
+- Exportable as attendance.csv
+
+---
+
+## ⚠️ Limitations
+
+- No real QR scanning (camera)
+- No backend or database
+- Data resets on page refresh
+- Not production-ready
+
+These limitations are intentional for learning and demonstration.
+
+---
+
+## 🔮 Future Improvements
+
+- Real QR scanning using device camera
+- Backend integration (Node.js / Firebase)
+- Authentication (Teacher / Student login)
+- Cloud database for persistent records
+- Mobile-first PWA version
+
+---
+
+## 👤 Author
+
+Harshith  
+Computer Science & Engineering Student  
+Focused on practical learning through hands-on projects
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.  
+Free to use and modify for educational purposes.
+
+
